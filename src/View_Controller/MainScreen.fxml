@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainScreenController">
+   <children>
+      <Button fx:id="customerBtn" layoutX="225.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#customerBtnClick" prefWidth="150.0" text="Customer Info">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="appBtn" layoutX="225.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#appBtnClick" prefWidth="150.0" text="Appointment Info">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="reportBtn" layoutX="225.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#reportBtnClick" prefWidth="150.0" text="Reports">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="logOutBtn" layoutX="498.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#logOutBtnClick" text="Exit Program" />
+      <Label layoutX="14.0" layoutY="14.0" text="Choose from the following:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

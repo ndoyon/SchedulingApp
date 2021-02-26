@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyCustomerController">
+   <children>
+      <Button fx:id="cancelBtn" layoutX="769.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#cancelToCustomer" text="Cancel" />
+      <Button fx:id="modCustomerBtn" layoutX="623.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#modCustomerConfirm" prefHeight="27.0" prefWidth="123.0" text="Modify Customer" />
+      <VBox layoutX="46.0" layoutY="74.0" prefHeight="317.0" prefWidth="117.0" spacing="41.0">
+         <children>
+            <Label text="Customer ID:" />
+            <Label text="Customer Name:" />
+            <Label fx:id="countryAddressLbl" text="Address:" />
+            <Label text="Country:" />
+            <Label text="First Division:" />
+            <Label text="Zip Code:" />
+            <Label text="Phone Number:" />
+         </children>
+      </VBox>
+      <VBox layoutX="163.0" layoutY="74.0" prefHeight="372.0" prefWidth="184.0" spacing="30.0">
+         <children>
+            <TextField fx:id="customerIDField" editable="false" prefHeight="9.0" prefWidth="278.0" promptText="ID" />
+            <TextField fx:id="customerNameField" promptText="Name" />
+            <TextField fx:id="customerAddressField" promptText="Address" />
+            <ComboBox fx:id="customerCountryComboBox" onMouseClicked="#updateComboBox" prefWidth="150.0" promptText="Country" />
+            <ComboBox fx:id="customerDivisionComboBx" prefHeight="28.0" prefWidth="149.0" promptText="Division" />
+            <TextField fx:id="customerZipField" promptText="Zip" />
+            <TextField fx:id="customerPhoneField" prefHeight="35.0" prefWidth="184.0" promptText="Phone #" />
+         </children>
+      </VBox>
+      <Label layoutX="24.0" layoutY="14.0" text="Modify Customer">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customerTableView" layoutX="387.0" layoutY="8.0" prefHeight="387.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="customerID" prefWidth="46.0" text="ID" />
+          <TableColumn fx:id="customerName" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="customerAddress" prefWidth="86.0" text="Address" />
+            <TableColumn fx:id="customerPostal" prefWidth="75.0" text="Zip" />
+            <TableColumn fx:id="customerPhone" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="customerDivision" prefWidth="75.0" text="Division ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

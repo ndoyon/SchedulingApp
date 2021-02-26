@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.LoginController">
+    <children>
+        <Label fx:id="titleLabel" layoutX="18.0" layoutY="14.0" text="Login:">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameLogin" layoutX="208.0" layoutY="132.0" prefHeight="27.0" prefWidth="211.0" />
+        <TextField fx:id="passwordLogin" layoutX="208.0" layoutY="210.0" prefWidth="211.0" />
+        <Label fx:id="usernameLabel" layoutX="98.0" layoutY="132.0" text="Label" />
+        <Label fx:id="passwordLabel" layoutX="98.0" layoutY="215.0" text="Label" />
+        <Button fx:id="loginButton" layoutX="286.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#loginClicked" text="Login" />
+      <Button fx:id="exitProgram" layoutX="531.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#exitClicked" text="Exit" />
+      <Label fx:id="locationLabel" layoutX="18.0" layoutY="50.0" text="Location:" />
+      <Label fx:id="countryLabel" layoutX="69.0" layoutY="50.0" text="Country" />
+    </children>
+
+</AnchorPane>

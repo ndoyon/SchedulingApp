@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="435.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddAppointmentController">
+   <children>
+      <DatePicker fx:id="appDate" layoutX="388.0" layoutY="103.0" prefHeight="27.0" prefWidth="117.0" promptText="Start Date" />
+      <ComboBox fx:id="appContactCmbBx" layoutX="390.0" layoutY="273.0" prefWidth="150.0" promptText="Contact" />
+      <ComboBox fx:id="appTypeCmbBx" layoutX="390.0" layoutY="236.0" prefWidth="150.0" promptText="Type of Appt" />
+      <ComboBox fx:id="appStartTimeCmbBx" layoutX="388.0" layoutY="138.0" prefHeight="27.0" prefWidth="117.0" promptText="Start Time" />
+      <TextField fx:id="appTitleField" layoutX="126.0" layoutY="146.0" promptText="Title" />
+      <TextField fx:id="appIDField" editable="false" layoutX="75.0" layoutY="76.0" prefHeight="27.0" prefWidth="57.0" promptText="ID" />
+      <TextField fx:id="appLocationField" layoutX="126.0" layoutY="194.0" promptText="Location" />
+      <Label layoutX="167.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveAddApp" layoutX="484.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#addAppClick" text="Save" />
+      <Button fx:id="cancelAddApp" layoutX="554.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#cancelAddAppClick" text="Cancel" />
+      <Label fx:id="appIDLabel" layoutX="21.0" layoutY="81.0" text="App ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="151.0" text="Title:" />
+      <Label layoutX="63.0" layoutY="199.0" text="Location:" />
+      <Label layoutX="56.0" layoutY="241.0" text="Customer:" />
+      <Label layoutX="75.0" layoutY="286.0" text="User:" />
+      <TextArea fx:id="appDescriptionField" layoutX="74.0" layoutY="350.0" prefHeight="74.0" prefWidth="206.0" />
+      <Label layoutX="73.0" layoutY="333.0" text="appt Description:" />
+      <ComboBox fx:id="appEndTimeCmbBx" layoutX="388.0" layoutY="168.0" prefHeight="27.0" prefWidth="117.0" promptText="End Time" />
+      <ComboBox fx:id="customerNameComboBox" layoutX="126.0" layoutY="236.0" prefHeight="27.0" prefWidth="117.0" promptText="Name" />
+      <ComboBox fx:id="userNameComboBox" layoutX="126.0" layoutY="281.0" prefHeight="27.0" prefWidth="117.0" promptText="Name" />
+   </children>
+</AnchorPane>

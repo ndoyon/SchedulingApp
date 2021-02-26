@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AppointmentController">
+   <children>
+      <TableView fx:id="appTableView" layoutX="22.0" layoutY="58.0" prefHeight="251.0" prefWidth="676.0">
+        <columns>
+          <TableColumn fx:id="appID" prefWidth="52.0" text="ID" />
+          <TableColumn fx:id="appTitle" prefWidth="98.0" text="Title" />
+            <TableColumn fx:id="appDescription" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="appLocation" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="appContact" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="appType" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="appStart" prefWidth="75.0" text="Start Date&amp;Time" />
+            <TableColumn fx:id="appEnd" prefWidth="75.0" text="End Date&amp;Time" />
+            <TableColumn fx:id="appCustID" prefWidth="75.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="addAppBtn" layoutX="31.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#addAppBtnClick" text="Add Appointment" />
+      <Button fx:id="editAppBtn" layoutX="154.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#modAppBtnClick" text="Modify Appointment" />
+      <Button fx:id="exitToMain" layoutX="589.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#exitBtnClick" text="Exit to Main Screen" />
+      <RadioButton fx:id="appMonthlyBtn" layoutX="31.0" layoutY="27.0" mnemonicParsing="false" onAction="#radioBtnChange" text="Monthly">
+         <toggleGroup>
+            <ToggleGroup fx:id="ApptToggleGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="appWeeklyBtn" layoutX="106.0" layoutY="27.0" mnemonicParsing="false" onAction="#radioBtnChange" text="Weekly" toggleGroup="$ApptToggleGroup" />
+      <RadioButton fx:id="allApptBtn" layoutX="225.0" layoutY="27.0" mnemonicParsing="false" onAction="#radioBtnChange" text="All Appointments" toggleGroup="$ApptToggleGroup" />
+      <Button fx:id="deleteApptBtn" layoutX="336.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#deleteApptClick" text="Delete Appointment" />
+   </children>
+</AnchorPane>

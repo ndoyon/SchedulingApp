@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddCustomerController">
+   <children>
+      <Label layoutX="36.0" layoutY="14.0" text="Add Customer">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="168.0" layoutY="64.0" prefHeight="317.0" prefWidth="184.0" spacing="30.0">
+         <children>
+            <TextField fx:id="customerIDField" editable="false" prefHeight="9.0" prefWidth="278.0" promptText="ID" />
+            <TextField fx:id="customerNameField" promptText="Name" />
+            <TextField fx:id="customerAddressField" promptText="Address" />
+            <ComboBox fx:id="customerCountryComboBox" prefWidth="150.0" promptText="Country" />
+            <TextField fx:id="customerZipField" promptText="Zip" />
+            <TextField fx:id="customerPhoneField" promptText="Phone #" />
+         </children>
+      </VBox>
+      <VBox layoutX="58.0" layoutY="64.0" prefHeight="317.0" prefWidth="117.0" spacing="41.0">
+         <children>
+            <Label text="Customer ID:" />
+            <Label text="Customer Name:" />
+            <Label text="Address:" />
+            <Label text="Country:" />
+            <Label text="Zip Code:" />
+            <Label text="Phone Number:" />
+         </children>
+      </VBox>
+      <Button fx:id="addCustomerBtn" layoutX="412.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#addCustomerConfirm" prefHeight="27.0" prefWidth="104.0" text="Add Customer" />
+      <Button fx:id="cancelBtn" layoutX="531.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#cancelToCustomer" text="Cancel" />
+      <Label layoutX="339.0" layoutY="239.0" text="First Division:" />
+      <ComboBox fx:id="customerDivisionComboBx" layoutX="423.0" layoutY="234.0" onMouseClicked="#updateComboBox" prefWidth="150.0" promptText="Division" />
+   </children>
+</AnchorPane>
